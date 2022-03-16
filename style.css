@@ -1,0 +1,204 @@
+/* CSS Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  outline: none;
+  text-decoration: none;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+ol, 
+ul, 
+li {
+  list-style: none;
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a img {
+  border: none;
+}
+
+button,
+a {
+  cursor: pointer; 
+  color: inherit;
+}
+
+textarea {
+  resize: none;
+}
+
+/* CSS Reset End */
+
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; 
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+:root {
+  --primary: #242d38;
+  --secondary: #efd592;
+}
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--primary);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  width: 100%;
+  height: 60px;
+  padding: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: var(--primary);
+  border-bottom: 1px solid;
+  color: var(--secondary);
+}
+
+header h1 {
+  font-size: 36px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 620px) {
+  header h1 {
+    font-size: 16px;
+  }
+}
+
+main {
+  position: relative;
+  max-width: 1000px;
+  margin: 120px auto;
+ 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 20px;
+  row-gap: 90px;
+}
+
+@media screen and (max-width: 900px) {
+  main {
+    margin: 40px;
+  }  
+}
+
+section {
+  position: relative;
+  width: 400px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+p.index {
+  position: absolute;
+  top: -20px;
+
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid var(--secondary);
+  background-color: var(--primary);
+
+  color: var(--secondary);
+  font-size: 24px;
+}
+
+article {
+  padding: 40px;
+  padding-bottom: 70px;
+
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+
+h2.title {
+  font-size: 36px;
+  font-weight: 400;
+}
+
+p.sub {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+hr {
+  margin: 10px 0;
+  border-bottom: 1px solid;
+}
+
+p.text {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+button {
+  position: absolute;
+  bottom: -30px;
+
+  width: calc(100% - 80px);
+  height: 60px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid var(--secondary);
+  background-color: var(--primary);
+
+  color: var(--secondary);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+button:hover {
+  border: 1px solid var(--primary);
+  background-color: var(--secondary);
+  color: var(--primary);
+}
